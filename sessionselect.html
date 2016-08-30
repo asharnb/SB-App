@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>StudioBridge</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/smartadmin-production.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
+
+    <style>
+        @font-face {
+            font-family: Open Sans;
+            src: url(fonts/OpenSans-Regular.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo-group">
+
+            <!-- PLACE YOUR LOGO HERE -->
+            <span id="logo"> <img src="images/logo-black.png" alt="StudioBridge"> </span>
+        </div>
+
+        <dl class="dl-horizontal pull-right mrt-10">
+            <br>
+            <dt>Server Status:</dt>
+            <dd><span><i class="fa fa-circle text-success"></i> Connected</span>
+            </dd>
+        </dl>
+    </header>
+    <br>
+
+
+    <article class="col-xs-12 col-md-12 col-lg-12 ">
+							<div id="panel-ps" class="panel panel-default">
+								<div class="panel-heading seperator">
+									<div class="panel-title">SB Listener App
+									</div>
+									<div class="panel-controls">
+										<a class="btn btn-xs btn-default" onclick="return false();">Settings</a>
+									</div>
+								</div>
+								<div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <dl class="dl-horizontal">
+                                <dt>Select a session:</dt>
+                                <dd class="mb-10"><strong><span id="displaymessage" class="text text-warning">All your open session are displayed here. Please select one to continue. Please make sure you have created a session before continuing.</span></strong>
+                                </dd>
+                            </dl>
+
+                        </div>
+
+                        <section>
+                            <div class="col-sm-12">
+                                <select style="width:100%" name='session' id='session' class='select2' data-placeholder='Choose a session...'>
+                                    <option></option>
+
+                                </select>
+                            </div>
+                        </section>
+
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button id="choosesession" class="btn btn-info pull-right">
+                                Choose Session
+                            </button>
+                        </div>
+                    </div>
+								</div>
+							</div>
+
+						</article>
+						
+
+    <script language="JavaScript" type="text/javascript" src="vars.js"></script>
+    <script language="JavaScript" type="text/javascript" src="jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/select2/select2.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="sessionselect.js"></script>
+
+
+</body>
+
+</html>
